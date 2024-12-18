@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.layout {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 222, 194);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    background-color: sienna;
+    gap: 40px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+    padding: 40px 20% 40px 20%;
+}

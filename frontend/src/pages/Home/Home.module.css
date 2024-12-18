@@ -1,0 +1,23 @@
+.base {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.briefDesc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 100px;
+}

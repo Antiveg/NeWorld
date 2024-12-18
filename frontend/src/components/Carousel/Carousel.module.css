@@ -1,0 +1,63 @@
+.carousel {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 5px 1px gray;
+}
+
+.contentContainer {
+    flex: 1;
+    min-width: 500px;
+    max-width: 750px;
+    height: 100%;
+}
+
+.imgBg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(70%);
+    background-image: url("https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 7% 20px 7%;
+    color: white;
+    width: 100%;
+}
+
+.leftToggle, .rightToggle {
+    height: 100%;
+    width: 5%;
+    min-width: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+
+.leftToggle {
+    left: 0
+}
+
+.rightToggle {
+    right: 0;
+}
+
+.leftToggle:hover, .rightToggle:hover {
+    background-color: white;
+    filter: opacity(30%);
+    transition: 1s;
+    cursor: pointer;
+}
