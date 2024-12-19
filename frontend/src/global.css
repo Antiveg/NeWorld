@@ -31,3 +31,9 @@
 .justify {
     text-align: justify;
 }
+
+.not-found {
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+}

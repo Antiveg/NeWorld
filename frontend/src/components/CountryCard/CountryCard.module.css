@@ -1,0 +1,44 @@
+.base {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.index {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.flag {
+    width: 80px;
+    height: 100%;
+}
+
+.flagImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* background-color: red; */
+}
+
+.officialName {
+    width: 50%;
+    min-width: 200px;
+    /* background-color: red; */
+}
+
+.commonName {
+    width: 25%;
+    min-width: 100px;
+    /* background-color: red; */
+}
