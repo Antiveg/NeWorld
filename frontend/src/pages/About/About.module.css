@@ -1,0 +1,121 @@
+.base {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutWorld {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgContainer {
+    width: 50%;
+}
+
+.earthImg {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    height: auto;
+}
+
+.worldDesc {
+    display: flex;
+    flex: 1;
+    overflow: auto;
+    width: 50%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+.aboutCountry {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+.countryImgs {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gridChild {
+    display: flex;
+    width: 100%;
+}
+
+.imgCountry {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.countryInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.countryDescription {
+    display: flex;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.basicInfoTable {
+    width: 50%;
+    border-collapse: collapse;
+    color: var(--init-black);
+}
+
+.row {
+    border: 1px solid var(--text-color-1);
+    background-color: var(--secondary);
+}
+
+.attr {
+    font-weight: bold;
+    border: 1px solid var(--text-color-1);
+    padding: 5px;
+    width: 50%;
+    background-color: var(--fourth);
+}
+
+.value {
+    font-weight: lighter;
+    border: 1px solid var(--text-color-1);
+    padding: 5px;
+    width: 50%;
+}
+
+.flag {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.countryNextDoor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.countryContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react"
+import { useNavigate } from 'react-router-dom'
 import styles from './CountryCard.module.css'
 import '../../global.css'
 
-const CountryCard = ({ index, flag, officialName, filterAttr }) => {
+const CountryCard = ({ index, flag, officialName, filterAttr, commonName }) => {
+
+    const navigate = useNavigate()
+
+    const uriCommonName = encodeURIComponent(commonName)
 
     return (
-        <div className={styles.base}>
+        <div className={styles.base} onClick={() => navigate(`/country/${uriCommonName}`)}>
             <div className={styles.index}>
                 <p className="ellipsis">{index}</p>
             </div>

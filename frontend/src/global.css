@@ -1,39 +1,83 @@
+:root {
+    --primary: rgb(255, 222, 194);
+    --secondary: antiquewhite;
+    --secondary-hover: rgb(255, 242, 228);
+    --tertiary: rgb(113, 84, 70);
+    --fourth: rgb(231, 209, 179);
+    --text-color-1: black;
+    --text-color-2: white;
+    --text-color-3: darkgrey;
+    --init-white: white;
+    --init-black: black;
+}
+
+[data-theme='dark'] {
+    --primary: rgb(96, 74, 55);
+    --secondary: rgb(184, 134, 69);
+    --secondary-hover: rgb(140, 122, 103);
+    --tertiary: rgb(198, 153, 131);
+    --fourth: rgb(162, 135, 98);
+    --text-color-1: white;
+    --text-color-2: black;
+    --text-color-3: lightgrey;
+    --init-white: black;
+    --init-black: white;
+}
+
+.super-huge-title {
+    font-size: 120px;
+    font-weight: bolder;
+    line-height: 0.9;
+    color: var(--text-color-1);
+}
+
 .big-title {
     font-size: 40px;
     font-weight: bold;
+    color: var(--text-color-1);
 }
 
 .medium-title {
     font-size: 28px;
     font-weight: bold;
+    color: var(--text-color-1);
 }
 
 .small-title {
     font-size: 18px;
     font-weight: bold;
+    color: var(--text-color-1);
 }
 
 .small-text {
     font-size: 18px;
+    color: var(--text-color-1);
 }
 
 .light-text {
     font-size: 18px;
     font-weight: lighter;
+    color: var(--text-color-1);
 }
 
 .ellipsis {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: var(--text-color-1);
 }
 
 .justify {
     text-align: justify;
+    color: var(--text-color-1);
 }
 
 .not-found {
-    color: gray;
+    color: var(--text-color-3);
     font-size: 20px;
     font-weight: bold;
+}
+
+.white {
+    color: white;
 }

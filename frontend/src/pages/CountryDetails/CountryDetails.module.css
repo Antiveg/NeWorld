@@ -1,0 +1,93 @@
+.base {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.backBtn {
+    align-self: flex-end;
+    background-color: var(--fourth);
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: none;
+    right: -150px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    gap: 10px;
+}
+
+.flagNName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    width: 25%;
+    min-width: 200px;
+    background-color: var(--fourth);
+}
+
+.mapContainer {
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flag {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--init-black);
+}
+
+.row {
+    border: 1px solid var(--text-color-1);
+    background-color: var(--secondary);
+}
+
+.attr {
+    font-weight: bold;
+    border: 1px solid var(--text-color-1);
+    padding: 5px;
+    width: 25%;
+    background-color: var(--fourth);
+}
+
+.value {
+    font-weight: lighter;
+    border: 1px solid var(--text-color-1);
+    padding: 5px;
+    width: 50%;
+}

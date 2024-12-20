@@ -1,20 +1,25 @@
 .base {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    flex: 1;
     left: 0;
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
 }
 
 .note {
     font-size: 18px;
     margin-top: 20px;
     color: var(--init-black);
+}
+
+.st0 {
+    fill: var(--init-black);
 }
 
 .btn {

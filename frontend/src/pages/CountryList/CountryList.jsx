@@ -5,6 +5,7 @@ import axios from 'axios'
 import CountryCard from '../../components/CountryCard/CountryCard'
 import Dropdown from "../../components/Dropdown/Dropdown"
 import SearchBox from "../../components/SearchBox/SearchBox"
+import Loading from '../Loading/Loading'
 
 const CountryList = () => {
 
@@ -43,7 +44,11 @@ const CountryList = () => {
     }, [])
 
     if(loading){
-        return <div>Loading... still fetching country data...</div>
+        return (
+            <Loading
+            loadingMsg="Loading... fetching country list"
+            />
+        )
     }
 
     const getCountryAttrValue = (country) => {
@@ -117,6 +122,7 @@ const CountryList = () => {
                     index={index + 1}
                     flag={country.flags.png}
                     officialName={country.name.official}
+                    commonName={country.name.common}
                     filterAttr={country.filterValue}
                     />
                 )})}

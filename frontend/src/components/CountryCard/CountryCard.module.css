@@ -5,9 +5,15 @@
     height: 60px;
     justify-content: space-between;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: var(--secondary);
     border-radius: 5px;
     padding: 10px;
+    cursor: pointer;
+}
+
+.base:hover {
+    background-color: var(--secondary-hover);
+    transition: 0.3s;
 }
 
 .index {
@@ -15,7 +21,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
 }
 
 .flag {
@@ -28,17 +33,14 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /* background-color: red; */
 }
 
 .officialName {
     width: 50%;
     min-width: 200px;
-    /* background-color: red; */
 }
 
 .commonName {
     width: 25%;
     min-width: 100px;
-    /* background-color: red; */
 }

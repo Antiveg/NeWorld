@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios'
 import styles from './Carousel.module.css'
+import Loading from '../../pages/Loading/Loading'
 import '../../global.css'
 
 const Carousel = () => {
@@ -45,7 +46,9 @@ const Carousel = () => {
 
     if(loading){
         return (
-            <div>Loading...</div>
+            <Loading
+            loadingMsg="Loading setting up carousel content..."
+            />
         )
     }
 
@@ -60,8 +63,8 @@ const Carousel = () => {
         <div className={styles.carousel}>
             <img className={styles.imgBg} src={currentCountry.flags.png} alt="Not Found!" />
             <div className={styles.details}>
-                <p className="small-text ellipsis">Most Populated Country #{index + 1}: {currentCountry.name.official}</p>
-                <h1 className="big-title ellipsis">{currentCountry.population} People</h1>
+                <p className="small-text ellipsis white">Most Populated Country #{index + 1}: {currentCountry.name.official}</p>
+                <h1 className="big-title ellipsis white">{currentCountry.population} People</h1>
             </div>
             <div className={styles.leftToggle} onClick={() => addIndex(-1)}>←</div>
             <div className={styles.rightToggle} onClick={() => addIndex(1)}>→</div>

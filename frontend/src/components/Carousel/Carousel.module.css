@@ -3,7 +3,6 @@
     height: 300px;
     display: flex;
     position: relative;
-    box-shadow: 0 0 5px 1px gray;
 }
 
 .contentContainer {
@@ -18,7 +17,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: brightness(70%);
+    filter: brightness(80%);
     background-image: url("https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg");
     background-size: cover;
     background-position: center;

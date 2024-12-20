@@ -5,6 +5,10 @@
     gap: 20px;
 }
 
+.svg {
+    color: var(--init-black);
+}
+
 .briefDesc {
     width: 100%;
     display: flex;

@@ -5,4 +5,6 @@
     border: none;
     border-radius: 5px;
     height: 100%;
+    background-color: var(--init-white);
+    color: var(--init-black)
 }
