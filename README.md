@@ -3,4 +3,3 @@ Website NeWorld adalah website yang diciptakan untuk menampilkan semua negara di
 - Search and Filter list negara dalam dunia
 - Menampilkan informasi detail tentang sebuah negara, seperti capital city, postal code format, cca2, nama official, nama common, dll.
 - About Page yang menampilkan dunia impian sang pencipta website
-(2702210680 - Stanic Dylan)
