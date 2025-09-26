@@ -24,7 +24,7 @@ const Carousel = () => {
         const getAllCountries = async () => {
             try {
                 setLoading(true)
-                const response = await axios.get("https://restcountries.com/v3.1/all")
+                const response = await axios.get("https://restcountries.com/v3.1/all?fields=name,flags")
                 const top5countries = response.data
                     .sort((a, b) => (b.population || 0) - (a.population || 0))
                     .slice(0, 5)
